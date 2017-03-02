@@ -10,7 +10,7 @@ let styles = {
         margin: "0 auto",
         padding: "0",
         minWidth: "100%",
-        display:"flex",
+        display:"-webkit-flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
