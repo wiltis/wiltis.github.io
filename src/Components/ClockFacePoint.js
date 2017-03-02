@@ -2,7 +2,7 @@
  * Created by William on 26.02.2017.
  */
 import React from "react"
-import {POINT_SIZE, CLOCK_BOX} from "../ConstValues"
+import {POINT_SIZE} from "../ConstValues"
 import {angleToPosition} from "../utils"
 
 export const ClockFacePoint = (props) => {
@@ -14,15 +14,14 @@ export const ClockFacePoint = (props) => {
         left: x,
         top: y,
         fontSize: "1.2em",
+        boxSizing: "border-box",
         fontWeight: "bold",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
     })
     let {x,y} = angleToPosition(props.angle)
-    let minutePoints = <span style={{transform:`rotate(${-props.angle-Math.PI/2}rad)`, fontSize:"0.1em",padding:"2px",boxSizing:"border-box"}}>
-                            |
-                        </span>
+    let minutePoints = <span style={{transform:`rotate(${-props.angle-Math.PI/2}rad)`, fontSize:"0.1em",padding:"2px",boxSizing:"border-box"}}>|</span>
     return (
         <div style={getStyles(x,y)}
              onClick={props.onClick}>

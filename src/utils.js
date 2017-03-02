@@ -12,10 +12,10 @@ export const angleToPosition = (angle) => {
     return {x: xpos, y: ypos}
 }
 
-export const drawCircle = (origin=[0,0], radius, color) => {
+export const drawCircle = (origin=[0,0], radius, color, opacity=1) => {
     return (
         <svg height={2*radius} width={2*radius}>
-            <circle cx={origin[0]} cy={origin[1]} r={radius} stroke={color} fill={color}/>
+            <circle cx={origin[0]} cy={origin[1]} r={radius} stroke={color} fill={color} fillOpacity={opacity}/>
         </svg>
     )
 }

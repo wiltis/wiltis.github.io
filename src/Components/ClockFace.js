@@ -4,7 +4,7 @@
 import React from "react"
 import ClockFacePoint from "./ClockFacePoint"
 import {HOURS, MINUTES, CLOCK_HEIGHT, CLOCK_BOX} from "../ConstValues"
-import {getOrigin, drawCircle} from "../utils"
+import {drawCircle} from "../utils"
 
 let styles = {
     height: CLOCK_HEIGHT+"px",
@@ -51,10 +51,10 @@ const ClockFace = (props) => {
         )
     }
     const activeFace = props.hoursFaceActive ? hourFace() : minuteFace()
-    let r = CLOCK_BOX/2
+    let frame = drawCircle([CLOCK_BOX/2,CLOCK_BOX/2], CLOCK_BOX/2, "white")
     return (
         <div style={styles}>
-            {drawCircle([r,r], r,"white")}
+            {frame}
             {activeFace}
         </div>
     )
