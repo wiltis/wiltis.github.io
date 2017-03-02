@@ -7,6 +7,10 @@ import Timepicker from "./Components/Timepicker"
 
 let styles = {
     app: {
+        margin: "0 auto",
+        padding: "0",
+        width: "100%",
+        height: "100%",
         display:"flex",
         flexDirection: "column",
         justifyContent: "center",

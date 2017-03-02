@@ -18,7 +18,7 @@ let styles = {
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    top: TIMEPICKER_HEIGHT/2+"px",
+    bottom: TIMEPICKER_HEIGHT/2+"px",
     position: "fixed",
 }
 
