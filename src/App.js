@@ -66,11 +66,15 @@ class App extends Component {
                                                                 updateTimeFields={this.updateTimeFields}
                                                                 initialTime={currentTime}
                                                                 />)
-
+        let inactiveStyle = this.state.timepickerVisible ? {display: "none"} : styles.app
         return (
             <div style={styles.app}>
-                {inputFields}
-                {timepicker}
+                <div style={inactiveStyle}>
+                    {inputFields}
+                </div>
+                <div>
+                    {timepicker}
+                </div>
             </div>
         );
 
