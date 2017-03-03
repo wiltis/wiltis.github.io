@@ -8,19 +8,20 @@ import Timepicker from "./Components/Timepicker"
 let styles = {
     app: {
         margin: "0 auto",
-        padding: "0",
         minWidth: "100%",
         display:"-webkit-flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        WebkitFlexDirection: "column",
+        WebkitJustifyContent: "center",
+        WebkitAlignItems: "center",
     },
     inputFields: {
         width: "55px",
         cursor: "pointer",
         margin: "200px 0px 200px 0px",
     },
-
 }
 
 class App extends Component {

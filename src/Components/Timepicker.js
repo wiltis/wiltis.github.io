@@ -10,16 +10,19 @@ import NavButtons from "./NavButtons"
 import {TIMEPICKER_HEIGHT, TIMEPICKER_WIDTH, TIMEPICKER_COLOR} from "../ConstValues"
 
 let styles = {
-    flex: "1 0 "+TIMEPICKER_WIDTH+"px",
     height: TIMEPICKER_HEIGHT+"px",
     width: TIMEPICKER_WIDTH+"px",
+    margin: "auto",
+    right: "0",
+    left: "0",
+    top: "0",
+    bottom: "0",
     backgroundColor: TIMEPICKER_COLOR,
     color: "green",
-    //border: "2px solid red",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    bottom: TIMEPICKER_HEIGHT/2+"px",
+    //bottom: TIMEPICKER_HEIGHT/2+"px",
     position: "fixed",
 }
 

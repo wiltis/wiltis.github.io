@@ -9,7 +9,6 @@ import {drawCircle} from "../utils"
 let styles = {
     height: CLOCK_HEIGHT+"px",
     width: "100%",
-    //border: "1px dashed black",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
